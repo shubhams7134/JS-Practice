@@ -1,5 +1,5 @@
 
-//  array of colors
+//  array of colors using names
 const colors1 = [
     "AliceBlue",
     "AntiqueWhite",
@@ -150,7 +150,9 @@ const colors1 = [
     "Yellow",
     "YellowGreen",
   ];
-var b= [
+
+//  array of colors using HEX code
+    var b= [
     "#63b598", "#ce7d78", "#ea9e70", "#a48a9e", "#c6e1e8", "#648177" ,"#0d5ac1" ,
     "#f205e6" ,"#1c0365" ,"#14a9ad" ,"#4ca2f9" ,"#a4e43f" ,"#d298e2" ,"#6119d0",
     "#d2737d" ,"#c0a43c" ,"#f2510e" ,"#651be6" ,"#79806e" ,"#61da5e" ,"#cd2f00" ,
@@ -195,28 +197,14 @@ var b= [
 var x = document.getElementById('maindiv');
 const btn=document.getElementById('btn');
 
+// Adding event listener
 btn.addEventListener('click',function(){
     console.log('clicked');
-    const z=Math.floor(Math.random()*(c));
-    console.log(colors1[z]);
+    const z=Math.floor(Math.random()*(c)); // Generating random number within size of color array
+    //console.log(colors1[z]);
+
+    // Implementing changes 
     x.style.backgroundColor = colors1[z];
     btn.style.backgroundColor = "white";
     btn.innerHTML = `Current color is ${colors1[z]}`
 })
-function hello(t) {
-    if(t==1 || t==0) {
-        return t;
-    }
-    return t*hello(t-1);
-}
-
-// setInterval(function(){
-//     const z=Math.floor(Math.random()*(c));
-//     console.log(b[z]);
-//     x.style.backgroundColor = b[z];
-//     x.innerHTML=`Clicked ${b[z]} color`;
-// },1000)
-console.log(hello(5));
-console.table(shubham);
-
-//changebackground();
