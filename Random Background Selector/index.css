@@ -1,4 +1,18 @@
 
 .maindiv {
- background-color: black;
+ /* background-color: black; */
+ width: 100%;
+ height: 100vh;
+ margin: none;
+ padding: none;
+}
+
+
+.colorButton{
+    border: none;
+    margin-left: 35%;
+    margin-top: 10%;
+    width: 350px ;
+    min-height: 100px;
+    font-size: x-large;
 }
