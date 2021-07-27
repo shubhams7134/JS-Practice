@@ -1,4 +1,3 @@
-
 //  array of colors using names
 const colors1 = [
     "AliceBlue",
@@ -196,7 +195,7 @@ const colors1 = [
 
 var x = document.getElementById('maindiv');
 const btn=document.getElementById('btn');
-
+let c=colors1.length
 // Adding event listener
 btn.addEventListener('click',function(){
     console.log('clicked');
